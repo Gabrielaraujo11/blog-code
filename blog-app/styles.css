@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  --purple-bg: #290742;
+  --dark-bg: #170027;
+  --button-bg: #9e6dc2;
+  --white: #fff;
+  --light-purple: #fbf6ff;
+  --green: #4fff4b;
+}
+
+html {
+  /* 1rem = 16px = 100%   62,5% = 10px */ /* 2.8rem = 28px*/
+  font-size: 62.5%;
+}
+
+.date {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-top: 1.5rem;
+}
+
+.text {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-top: 1.2rem;
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  color: var(--purple-bg);
+  cursor: pointer;
+}
+
+.title:hover {
+  color: var(--button-bg);
+  text-decoration: underline;
+}
+
+.container .container-heder {
+  background-color: var(--purple-bg);
+  width: 100%;
+  height: 58.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .container-heder header {
+  display: flex;
+  min-width: 116.9rem;
+
+  align-items: center;
+  justify-content: space-between;
+  margin: 4rem auto;
+}
+
+.container .container-heder header h1 {
+  font-size: 2.7rem;
+  color: var(--white);
+  font-family: 'Poppins';
+}
+
+.container .container-heder header ul {
+  width: 34.1rem;
+  display: flex;
+  margin-top: 0;
+  justify-content: space-between;
+}
+
+.container .container-heder header ul li {
+  padding-left: 0.2rem;
+  padding-right: 0.5rem;
+}
+
+.container .container-heder header ul li.bar {
+  border-left: 3px solid var(--green);
+}
+
+.container .container-heder header ul li a {
+  font-size: 2rem;
+  color: var(--light-purple);
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+.container .container-heder header ul li a.active {
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+
+.container .container-heder header .search {
+  background: var(--dark-bg);
+  max-width: 25rem;
+  height: 4.4rem;
+  border-radius: 4px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.container .container-heder header .search input {
+  background: none;
+  padding: 1rem;
+  outline: none;
+  color: var(--white);
+  margin-right: 1rem;
+}
+
+.container .container-heder header .search button {
+  background: var(--button-bg);
+  padding: 0.9rem;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.container .container-heder .container-text {
+  min-width: 116.9rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6.4rem;
+}
+
+.container .container-heder .container-text .title-text h2 {
+  font-size: 3.6rem;
+  font-family: 'Poppins';
+  font-weight: 700;
+  color: var(--button-bg);
+}
+
+.container .container-heder .container-text .title-text p {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: var(--white);
+  text-align: left;
+  line-height: 2.7rem;
+  margin-top: 1.6rem;
+}
+
+.container .container-heder .container-text .title-text .span {
+  margin-top: 2.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.container .container-heder .container-text .title-text .span span {
+  display: inline-block;
+  align-items: center;
+}
+
+.container .container-heder .container-text .title-text .span span a {
+  font-family: 'roboto';
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--button-bg);
+}
+
+.container .container-heder .container-text .title-text .span img {
+  margin-left: 1rem;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.container .container-heder .container-text .span img {
+  width: 57rem;
+  height: 34.6rem;
+}
+
+.container main .post {
+  display: flex;
+  max-width: 116.9rem;
+  margin: 3rem auto;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.container main .post .first-post {
+  width: 56.9rem;
+  height: 54.6rem;
+}
+
+.container main .post .first-post img {
+  width: 56.9rem;
+  height: 34.2rem;
+}
+
+.container main .post .first-post h2 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  font-family: 'Roboto', sans-serif;
+  color: var(--purple-bg);
+  margin-top: 1.5rem;
+}
+
+.container main .post .description {
+  width: 47.2rem;
+  height: 41.45rem;
+}
+
+.container main .post .description h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  color: var(--dark-bg);
+}
+
+.container main .post .description .line {
+  border: 1px solid #f2e7fa;
+  margin: 2.3rem 0;
+}
+
+.container main .cards {
+  display: flex;
+  max-width: 116.9rem;
+  margin: 3rem auto;
+  justify-content: space-between;
+}
+.container main .cards .card {
+  width: 37rem;
+  height: 45.8rem;
+}
